@@ -2,11 +2,6 @@
     "version":2,
     "framework":"nextjs",
     "devCommand":"pnpm run dev",
-    "builds":[
-        {
-            "src":"package.json"
-        }
-    ],
     "outputDirectory":"outdir",
     "routes": [
         {
