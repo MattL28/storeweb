@@ -2,7 +2,7 @@
     "version":2,
     "framework":"nextjs",
     "devCommand":"pnpm run dev",
-    "outputDirectory":"outdir",
+    "outputDirectory":"pages",
     "routes": [
         {
           "src": "/(.*)",
