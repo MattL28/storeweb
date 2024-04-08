@@ -2,7 +2,6 @@
     "version":2,
     "framework":"nextjs",
     "devCommand":"pnpm run dev",
-    "outputDirectory":"build",
     "routes": [
         {
           "src": "/(.*)",
