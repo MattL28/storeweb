@@ -2,6 +2,15 @@
     "version":2,
     "framework":"nextjs",
     "devCommand":"pnpm run dev",
+    "builds":[
+        {
+            "src":"package.json",
+            "use":"@now/static-build",
+            "config":{
+                "distDir":"out"
+            }
+        }
+    ],
     "routes": [
         {
           "src": "/(.*)",
