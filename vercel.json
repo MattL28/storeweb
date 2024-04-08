@@ -4,11 +4,7 @@
     "devCommand":"pnpm run dev",
     "builds":[
         {
-            "src":"package.json",
-            "use":"@now/static-build",
-            "config":{
-                "distDir":"out"
-            }
+            "src":"package.json"
         }
     ],
     "outputDirectory":"outdir",
