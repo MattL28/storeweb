@@ -3,6 +3,9 @@
     "framework":"nextjs",
     "devCommand":"pnpm run dev",
     "outputDirectory":"build",
+    "builds": [
+        { "src": "index.tsx", "use": "@vercel/node" }
+      ],
     "routes": [
         {
           "src": "/(.*)",
