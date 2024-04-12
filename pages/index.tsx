@@ -3,12 +3,13 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import { NextPage } from "next";
+import { READ_WRITE_CONTRACT } from "../constants/addresses";
 
 const Home: NextPage = () => {
   const wallet_add=useAddress();
   console.log(wallet_add)
   const [newvalue,setnewval]=useState(0);
-  const {contract}=useContract("0x8D310dC283bA1907E72D514478c29c0E7545a731");
+  const {contract}=useContract(READ_WRITE_CONTRACT);
   const{data: numval,
     isLoading
     }=useContractRead(contract,"retrieve");
